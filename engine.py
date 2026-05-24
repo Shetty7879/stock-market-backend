@@ -4,7 +4,7 @@ import pandas as pd
 def analyze_stocks(ticker_list):
     results = {"long_term": [], "short_term": [], "intraday": []}
     
-    for ticker in ticker_list: 
+    for ticker in ticker_list:
         try:
             print(f"Analyzing data for {ticker}...")
             stock = yf.Ticker(ticker)
